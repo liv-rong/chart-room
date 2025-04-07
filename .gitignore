@@ -1,0 +1,90 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+.env
+
+docker-compose.override.yml
+
+
+# Turbo
+.turbo
+
+
+# Compiled Output
+dist
+dist-ssr
+temp
+/out-tsc
+build
+.temp
+.tmp
+tsconfig.tsbuildinfo
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+
+# Local env files
+.env
+.env.local
+.env.*.local
+.env.*
+!.env.example
+
+
+# Zip
+*.zip
+*.rar
+
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Turbo
+.turbo
+
+# Vercel
+.vercel
+
+# Next.js
+.next
+out
+**/node_modules/
