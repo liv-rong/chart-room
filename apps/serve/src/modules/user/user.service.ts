@@ -8,10 +8,13 @@ import { User, Prisma } from '@prisma/client';
 export class UserService {
   constructor(private prisma: PrismaService) {}
 
-  async create(createUserDto: CreateUserDto) {
-    // return this.prisma.user.findUnique({
-    //   where: userWhereUniqueInput,
-    // });
+  async create(data: Prisma.UserCreateInput) {
+    return await this.prisma.user.create({
+      data,
+      select: {
+        id: true,
+      },
+    });
   }
 
   findAll() {
